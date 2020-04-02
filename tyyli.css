@@ -1,0 +1,82 @@
+:root {
+    background-color: darkgray;
+    font-family: Georgia;
+}
+
+
+.otsikko {
+    font-size: 40px;
+    padding-left: 40px
+}
+
+body {
+    background-image: url("logo.jpg");
+    background-repeat: no-repeat;
+    background-size: 1980px 1028px;
+
+}
+.flex_container {
+        display: flex;
+        margin-left: 5%
+    }
+
+    .flex_item {
+        flex: 1
+    }
+a:hover {
+    color: aqua
+}
+
+header {
+    text-align: center;
+}
+
+body {
+    background-color: whitesmoke;
+    font-family: fantasy;
+}
+
+
+h1 {
+    color: rgba(255, 0, 0, 0.58);
+    font-family: monospace;
+    background-color: whitesmoke
+}
+
+p {
+    font-family: Georgia
+}
+
+footer p {
+    text-align: center
+}
+
+/*.flex_item img {width:80%}; display: block; margin auto;
+/*näyttö800px*/
+@media only screen and (min-width:600px) {
+    body {
+        width: 80%;
+        margin: auto;
+        border: solid black 1px
+    }
+
+    .flex_container {
+        display: inline-flex;
+        margin-left: 35%
+    }
+
+    .flex_item {
+        flex: 1
+    }
+
+    .flex_item p {
+        background-color: lightblue;
+        padding: 30px;
+        border: black 1px
+    }
+
+    footer {
+        border: solid black 1px;
+        background: rgba(255, 255, 255, 0.5)
+    }
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fi en">
+
+<head>
+
+    <title>Lainauspääte</title>
+    <script src="kone.js"></script>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+
+    <meta name="author" content="InnoHell">
+    <!-- lisää meta-elementtejä -->
+
+    <link href="tyyli.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <header>
+        <h2>Lainauspääte</h2>
+
+    </header>
+    <main>
+
+        <div class="flex_container">
+            <div class="flex_item">
+                <h3>Aseta kirjastokortti lukijaan</h3>
+
+                <a href="esimerkki1.jpg"><img src="esimerkki1.jpg" title="x" alt="esimerkkikuva" style=" height: 300px; width: 300px;"></a>
+                <form name="hTiedot" method="get">
+
+                    Viivakoodi:<br>
+                    <input type="text" name="viivakoodi" id="myInput" value="Some text.."><br>
+                    <button id="myBtn" onclick="osoiteTiedot(this.form)">Button</button>
+                    <script>
+                        var input = document.getElementById("myInput");
+                        input.addEventListener("keyup", function(event) {
+                            if (event.keyCode === 13) {
+                                event.preventDefault();
+                                document.getElementById("myBtn").click();
+                            }
+                        });
+
+                    </script>
+
+
+                    <!--<input type="button" name="button" Value="Lähetä tiedot" onClick="osoiteTiedot(this.form)"><br><br>-->
+
+                    <div id="answer"></div>
+                    <p>Syötä 00100 tai 001 tai 002...</p>
+                </form>
+                <!--<input id="myInput" value="Some text..">
+                <button id="myBtn" onclick="javascript:alert('Hello World!')">Button</button>
+
+                <script>
+                    var input = document.getElementById("myInput");
+                    input.addEventListener("keyup", function(event) {
+                        if (event.keyCode === 13) {
+                            event.preventDefault();
+                            document.getElementById("myBtn").click();
+                        }
+                    });
+
+                </script>-->
+
+            </div>
+            <div class="flex_item">
+
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>hEll-libs<br>Pasila<br>00110 Hellsinki</p>
+    </footer>
+</body>
+
+</html>
