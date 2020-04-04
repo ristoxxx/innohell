@@ -9,3 +9,4 @@
 - Lopullisen uloasun toteutus
 - Python toiminnallisuuden lisääminen
 # innohell
+# inno
