@@ -19,7 +19,6 @@ const courses = [{  "name": "Orientation to software engineering",
 "timing" : "3.semester"
   }
 ];
-
 var lukumaara = 0;
 var kirja = "Don Quihote!";
 function ostos() {
@@ -31,7 +30,7 @@ function osoiteTiedot (form) {
     var viivakoodi = form.viivakoodi.value;
     
     if (viivakoodi == "00100") {
-        alert ("Voitto tai kuolema!")
+        window.open('http://127.0.1.1:8000', '_blank');
     } else {
         const getBook = courses.find(book => book.code === viivakoodi);
         document.getElementById("answer").innerHTML = (getBook.name + " \n " + getBook.timing);
